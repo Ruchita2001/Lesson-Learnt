@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="homepage style.css">
+</head>
+<body>
+    <nav class="nav">
+        <i class="uil uil-bars navOpenBtn"></i>
+        <a href="#" class="logo">WORK WISELY</a>
+        <ul class="nav-links">
+            <i class="uil uil-times navCloseBtn"></i>
+            <li><a href="#">All</a></li>
+            <li><a href="#">Project</a></li>
+            <li><a href="#">Today</a></li>
+            <li><a href="#">Weekly</a></li>
+            <li><a href="#">Monthly</a></li>
+        </ul>
+        <div class="search">
+            <form class="search-form">
+                <input type="text" placeholder="Search...">
+                <input type="submit" value="Search">
+            </form>
+        </div>
+        <script>
+
+            var navOpenBtn = document.querySelector('.navOpenBtn');
+            var navCloseBtn = document.querySelector('.navCloseBtn');
+            var navLinks = document.querySelector('.nav-links');
+
+            navOpenBtn.addEventListener('click', function () {
+                navLinks.classList.add('active');
+            });
+
+            navCloseBtn.addEventListener('click', function () {
+                navLinks.classList.remove('active');
+            });
+        </script>
+    </nav>
+</body>
+
+</html>
+
